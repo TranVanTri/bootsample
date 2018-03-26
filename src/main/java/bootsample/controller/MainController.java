@@ -141,6 +141,9 @@ public class MainController {
 			if (admin.getUsername().equals(username) && admin.getPassword().equals(password)) {
 				request.setAttribute("mode", "MODE_HOME");
 				return "index";
+			}else {
+				request.setAttribute("message", "Saitk");
+				return "loginAdmin";
 			}
 		}catch (Exception e) {
 			request.setAttribute("message", "Saitk");

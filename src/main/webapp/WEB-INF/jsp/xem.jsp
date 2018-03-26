@@ -36,7 +36,7 @@
 				<li><a href="#"><i class="fa fa-sign-in" aria-hidden="true"></i>
 						Login</a></li>
 			</ul>-->
-			<img src="Static/image/nd.jpg" style="height: auto; width: 100%;" />
+			<img src="Static/image/sh.jpg" style="height: auto; width: 100%;" />
 
 		</div>
 
