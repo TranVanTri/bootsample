@@ -1,0 +1,39 @@
+buildscript {
+    repositories {
+        mavenCentral()
+    }
+    dependencies {
+        classpath("org.springframework.boot:spring-boot-gradle-plugin:1.4.3.RELEASE")
+    }
+}
+
+apply plugin: 'java'
+apply plugin: 'application'
+apply plugin: 'eclipse'
+apply plugin: 'org.springframework.boot'
+
+jar {
+    baseName = 'gs-uploading-files'
+    version =  '0.1.0'
+}
+
+repositories {
+    mavenCentral()
+}
+
+mainClassName = 'Quickstart'
+sourceCompatibility = 1.7
+targetCompatibility = 1.7
+version = '1.0'
+
+dependencies {
+    compile("org.springframework.boot:spring-boot-starter-thymeleaf")
+    compile("org.springframework.boot:spring-boot-devtools")
+    compile("org.springframework.boot:spring-boot-configuration-processor")
+    testCompile("org.springframework.boot:spring-boot-starter-test")
+    
+    compile 'com.google.api-client:google-api-client:1.23.0'
+    compile 'com.google.oauth-client:google-oauth-client-jetty:1.23.0'
+    compile 'com.google.apis:google-api-services-drive:v2-rev300-1.23.0'
+}
+
