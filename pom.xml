@@ -116,11 +116,35 @@
 			<artifactId>google-oauth-client-jetty</artifactId>
 			<version>1.22.0</version>
 		</dependency>
+		<!-- gg -->
+		<dependency>
+			<groupId>com.google.cloud.sql</groupId>
+			<artifactId>mysql-socket-factory-core</artifactId>
+			<version>1.0.2</version>
+		</dependency>
 		
-		
+		<dependency>
+			<groupId>com.google.cloud.sql</groupId>
+			<artifactId>mysql-socket-factory-connector-j-6</artifactId>
+			<version>1.0.2</version>
+		</dependency>
+		<!-- gg -->
   </dependencies>
   
   <build>
     <finalName>bootsample</finalName>
+       <plugins>
+    
+      <plugin>
+        <groupId>com.google.appengine</groupId>
+        <artifactId>appengine-maven-plugin</artifactId>
+        <version>1.9.60</version>
+      </plugin>
+      <plugin>
+      	<groupId>org.springframework.boot</groupId>     
+      	<artifactId>spring-boot-maven-plugin</artifactId> 
+      </plugin>
+  
+    </plugins>
   </build>
 </project>
