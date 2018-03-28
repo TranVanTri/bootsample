@@ -117,7 +117,7 @@
 			<version>1.22.0</version>
 		</dependency>
 		<!-- gg -->
-		<dependency>
+<!-- 		<dependency>
 			<groupId>com.google.cloud.sql</groupId>
 			<artifactId>mysql-socket-factory-core</artifactId>
 			<version>1.0.2</version>
@@ -127,7 +127,7 @@
 			<groupId>com.google.cloud.sql</groupId>
 			<artifactId>mysql-socket-factory-connector-j-6</artifactId>
 			<version>1.0.2</version>
-		</dependency>
+		</dependency> -->
 		<!-- gg -->
   </dependencies>
   
