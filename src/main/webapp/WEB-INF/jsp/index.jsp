@@ -17,6 +17,7 @@
 <link rel="stylesheet"
 	href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
 <link rel="stylesheet" href="Static/css/Css.css">
+<script src="Static/js/ckeditor/ckeditor.js"></script>
 
 <script
 	src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -130,6 +131,9 @@
 									<div class="form-group">
 										<label for="noidung">Nội dung:</label>
 										<textarea class="form-control" id="noidung" name="noidung">${tintuc.noidung}</textarea>
+										<script>
+											CKEDITOR.replace("noidung");
+										</script>
 									</div>
 
 									<button type="submit" class="btn btn-primary" value="Save">Submit</button>
@@ -143,7 +147,7 @@
 	</c:choose>
 
 
-	<script type="text/javascript">
+		<script type="text/javascript">
 		$(document).ready(function() {
 			$('#blah').hide();
 			function readURL(input) {
@@ -166,7 +170,7 @@
 		});
 	</script>
 
-
+<!-- 
 	<script src="ckeditor/ckeditor.js"></script>
 	<script src="ckfinder/ckfinder.js"></script>
 	<script>
@@ -182,7 +186,7 @@
 							filebrowserFlashUploadUrl : 'ckfinder/core/connector/java/connector.java?command=QuickUpload&type=Flash'
 						});
 	</script>
-
+ -->
 
 
 

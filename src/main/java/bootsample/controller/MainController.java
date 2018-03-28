@@ -88,7 +88,7 @@ public class MainController {
 		return "xem";
 	}
 
-	@GetMapping("/home")
+	@GetMapping("/")
 	public String home(HttpServletRequest request) {
 		request.setAttribute("mode", "MODE_HOME");
 		return "index";
