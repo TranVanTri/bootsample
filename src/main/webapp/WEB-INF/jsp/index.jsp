@@ -103,7 +103,7 @@
 					<div class="col-lg-8 offset-2">
 
 						<form action="save-task" method="post"
-							enctype="multipart/form-data" runat="server">
+							enctype="multipart/form-data" >
 							<div class="card">
 								<div class="card-body">
 									<div class="form-group">
